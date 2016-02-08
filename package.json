@@ -1,0 +1,49 @@
+{
+  "name": "instela-api-client",
+  "version": "0.0.1",
+  "description": "A good starting point for your new Node.js NPM packages.",
+  "homepage": "http://github.com/sdeering/npm-boilerplate",
+  "keywords": [
+    "instela",
+    "api",
+    "rest"
+  ],
+  "author": "Cagatay Gurturk <cagatay@instela.com.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/instela/instela-api-client-js"
+  },
+  "bugs": {
+    "mail": "samdeering@gmail.com",
+    "url": "http://github.com/instela/instela-api-client-js"
+  },
+  "dependencies": {
+    "cli-color": "~0.2.3",
+    "lodash": "^4.0.0",
+    "superagent": "^1.7.2"
+  },
+  "devDependencies": {
+    "bluebird": "^3.2.2",
+    "chai": "~1.8.1",
+    "grunt": "latest",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-mocha": "~0.4.6",
+    "mocha": "~1.17.0"
+  },
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/instela/instela-api-client-js/raw/master/LICENSE"
+    }
+  ]
+}
