@@ -136,7 +136,7 @@ Instela.prototype.callApi = function (api, operation, params, callback) {
 module.exports = new Instela();
 
 },{"./oauth.js":3,"lodash/fp/extend":141,"path":4,"superagent":173}],3:[function(require,module,exports){
-var api = require('../api/oauth.json');
+var api = require('../api/oauth.js');
 
 function OAuth(config) {
     this.init(config);

@@ -1,0 +1,160 @@
+module.exports = {
+    "version": "3.0",
+    "metadata": {
+        "endpointPrefix": "messages",
+        "serviceFullName": "Instela Messages Service"
+    },
+    "operations": {
+        "GetThreadList": {
+            "name": "GetThreadList",
+            "http": {
+                "method": "GET",
+                "requestUri": ""
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "location": "query"
+                },
+                {
+                    "name": "per_page",
+                    "location": "query"
+                }
+            ],
+            "map": "ThreadList",
+            "errors": {
+                "400": {
+                    "shape": "BadRequestException",
+                    "exception": true
+                },
+                "401": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "403": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "404": {
+                    "shape": "NotFoundException",
+                    "exception": true
+                },
+                "429": {
+                    "shape": "TooManyRequestsException",
+                    "exception": true
+                }
+            }
+        },
+        "GetThread": {
+            "name": "GetThread",
+            "http": {
+                "method": "GET",
+                "requestUri": "/{u1}-{u2}"
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "location": "query"
+                },
+                {
+                    "name": "per_page",
+                    "location": "query"
+                }
+            ],
+            "map": "Thread",
+            "errors": {
+                "400": {
+                    "shape": "BadRequestException",
+                    "exception": true
+                },
+                "401": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "403": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "404": {
+                    "shape": "NotFoundException",
+                    "exception": true
+                },
+                "429": {
+                    "shape": "TooManyRequestsException",
+                    "exception": true
+                }
+            }
+        },
+        "SendMessage": {
+            "name": "SendMessage",
+            "http": {
+                "method": "POST",
+                "requestUri": ""
+            },
+            "parameters": [
+                {
+                    "name": "receiver",
+                    "location": "body"
+                },
+                {
+                    "name": "message",
+                    "location": "body"
+                }
+            ],
+            "map": "Message",
+            "errors": {
+                "400": {
+                    "shape": "BadRequestException",
+                    "exception": true
+                },
+                "401": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "403": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "404": {
+                    "shape": "NotFoundException",
+                    "exception": true
+                },
+                "429": {
+                    "shape": "TooManyRequestsException",
+                    "exception": true
+                }
+            }
+        },
+        "GetMessage": {
+            "name": "GetMessage",
+            "http": {
+                "method": "GET",
+                "requestUri": "/{id}"
+            },
+            "parameters": [],
+            "map": "Message",
+            "errors": {
+                "400": {
+                    "shape": "BadRequestException",
+                    "exception": true
+                },
+                "401": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "403": {
+                    "shape": "UnauthorizedException",
+                    "exception": true
+                },
+                "404": {
+                    "shape": "NotFoundException",
+                    "exception": true
+                },
+                "429": {
+                    "shape": "TooManyRequestsException",
+                    "exception": true
+                }
+            }
+        }
+    }
+};

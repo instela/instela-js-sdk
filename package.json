@@ -1,8 +1,8 @@
 {
-  "name": "instela-api-client",
-  "version": "0.0.1",
-  "description": "A good starting point for your new Node.js NPM packages.",
-  "homepage": "http://github.com/sdeering/npm-boilerplate",
+  "name": "instela-js-sdk",
+  "version": "0.1.2",
+  "description": "Instela Javascript SDK.",
+  "homepage": "http://github.com/instela/instela-js-sdk",
   "keywords": [
     "instela",
     "api",
@@ -12,14 +12,13 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "http://github.com/instela/instela-api-client-js"
+    "url": "http://github.com/instela/instela-js-sdk"
   },
   "bugs": {
-    "mail": "samdeering@gmail.com",
-    "url": "http://github.com/instela/instela-api-client-js"
+    "mail": "cagatay@instela.com",
+    "url": "http://github.com/instela/instela-js-sdk"
   },
   "dependencies": {
-    "cli-color": "~0.2.3",
     "lodash": "^4.0.0",
     "superagent": "^1.7.2"
   },
@@ -43,7 +42,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/instela/instela-api-client-js/raw/master/LICENSE"
+      "url": "http://github.com/instela/instela-js-sdk/raw/master/LICENSE"
     }
   ]
 }
