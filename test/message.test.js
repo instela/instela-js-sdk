@@ -14,7 +14,7 @@ var generateRandom = function () {
 describe('instela message client', function (done) {
 
     it('sends message and gets it', function (done) {
-        this.setTimeout(15000);
+        this.timeout(15000);
         var email = "test" + generateRandom() + "@instela.com";
         var password = 'test_password';
         var user_id = null;

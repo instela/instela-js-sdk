@@ -13,7 +13,7 @@ var generateRandom = function () {
 describe('instela user client', function (done) {
 
     it('gets user', function (done) {
-        this.setTimeout(15000);
+        this.timeout(15000);
 
         UserClient.GetUser({
             'id': 1
@@ -29,7 +29,7 @@ describe('instela user client', function (done) {
     });
 
     it('create user', function (done) {
-        this.setTimeout(15000);
+        this.timeout(15000);
 
         var username = "test" + generateRandom();
         var email = "test" + generateRandom() + "@instela.com";
